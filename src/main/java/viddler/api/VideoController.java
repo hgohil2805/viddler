@@ -4,7 +4,7 @@ package main.java.viddler.api;
  * Created by iceman on 6/11/2017.
  */
 
-import main.java.viddler.dao.UserInfoDao;
+import main.java.viddler.dao.UserInfo;
 import main.java.viddler.dao.UserInfoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -26,7 +26,7 @@ public class VideoController {
     @RequestMapping("/add")
     public void addUser(){
         System.out.println("Adding user");
-        UserInfoDao userInfo = new UserInfoDao();
+        UserInfo userInfo = new UserInfo();
         userInfo.setFirstName("Hardik");
         userInfo.setLastName("Gohil");
         userInfoRepository.save(userInfo);

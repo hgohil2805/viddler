@@ -6,7 +6,7 @@ import javax.persistence.*;
  * Created by iceman on 6/11/2017.
  */
 @Entity
-public class UserInfoDao {
+public class UserInfo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
